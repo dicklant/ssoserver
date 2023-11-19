@@ -6,9 +6,9 @@ const jwksClient = require('jwks-rsa');
 
 const config = {
     auth: {
-        clientId: "[CLIENT ID]", //Le client ID de l'application enregistrée sur Azure Active Directory 
-        authority: "https://login.microsoftonline.com/[TENANT ID]", //Le Tenant ID de votre domaine Azure ACtive Directory
-        clientSecret: "[CLIENT SECRET]",
+        clientId: "45390660-c83f-4680-98b6-d87c08d75289", //Le client ID de l'application enregistrée sur Azure Active Directory 
+        authority: "https://login.microsoftonline.com/29053aa4-6a7e-4769-a948-245a377b85c9", //Le Tenant ID de votre domaine Azure ACtive Directory
+        clientSecret: "Dpc8Q~Sao.jB1Ys60Zo3y-d4GmJTryoNDNMt6cSB",
     }
 };
 
