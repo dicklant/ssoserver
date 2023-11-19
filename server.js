@@ -50,7 +50,7 @@ const getSigningKeys = (header, callback) => {
     });
 
     client.getSigningKey(header.kid, function (err, key) {
-        var signingKey = key.publicKey || key.rsaPublicKey;
+        var signingKey = key.getPublicKey || key.rsaPublicKey;
         callback(null, signingKey);
     });
 }
