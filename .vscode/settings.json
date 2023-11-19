@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/34679de0-095b-4b0c-85ca-4466d6408a99/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/ssoserver",
+    "appService.deploySubpath": "."
+}
