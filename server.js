@@ -57,7 +57,7 @@ const getSigningKeys = (header, callback) => {
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) => res.send('Bonjour et Bienvenue v0.0.2!'));
+app.get('/', (req, res) => res.send('Home de SSO Server v0.0.2!'));
 
 
 app.get('/token', validateJwt, (req, res) => {
