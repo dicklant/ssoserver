@@ -57,10 +57,10 @@ const getSigningKeys = (header, callback) => {
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) => res.send('Bonjour et Bienvenue v0.0.2!'));
+app.get('/token', (req, res) => res.send('Bonjour et Bienvenue v0.0.2!'));
 
 
-app.get('/token', validateJwt, (req, res) => {
+app.get('/', validateJwt, (req, res) => {
     const authHeader = req.headers.authorization;
     const oboRequest = {
         oboAssertion: authHeader.split(' ')[1],
