@@ -60,7 +60,7 @@ app.use(express.static('public'));
 app.get('/', (req, res) => res.send('Home de SSO Server v0.0.2!'));
 
 
-app.get('/token', validateJwt, (req, res) => {
+app.get('/.auth/login/aad/callback', validateJwt, (req, res) => {
     const authHeader = req.headers.authorization;
     const oboRequest = {
         oboAssertion: authHeader.split(' ')[1],
